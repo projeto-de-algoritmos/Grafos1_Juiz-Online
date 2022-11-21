@@ -34,8 +34,8 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 #### Saída
 
-Para cada pergunta, deve haver uma das seguintes respostas:
-&emsp;“Lets que lets”, se é possível chegar de um bairro ao outro;
+Para cada pergunta, deve haver uma das seguintes respostas:<br>
+&emsp;“Lets que lets”, se é possível chegar de um bairro ao outro;<br>
 &emsp;“Deu ruim”, se não é possível chegar de um bairro ao outro.
 <br>
 
