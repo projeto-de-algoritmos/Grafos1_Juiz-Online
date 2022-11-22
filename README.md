@@ -164,8 +164,9 @@ Caso 2:
  
 
 ~~~
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+## Outros
+**OBS1:** A questão 2959 | Credo com ParaTudo! apresentou TLE, provavelmente por ter sido elaborada utilizando python.<br>
+**OBS2:** O Vídeo apresentação se encontra na pasta outros deste repositório.
 
 
 
