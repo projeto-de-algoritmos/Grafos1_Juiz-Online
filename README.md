@@ -16,6 +16,8 @@
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 ![Questão 2959 em execução](screenshots/2959.png)
 
+![Questão 1081 em execução](screenshots/1081.png)
+
 ## Instalação 
 **Linguagem**: C e Python 3.10.<br>
 
@@ -75,8 +77,93 @@ Deu ruim
 Lets que lets
 Lets que lets
 ~~~
+<br><br>
+### 1081 | DFSr - Depth Hierarchy
 
+&emsp;Em gráficos, a função PathR é bem conhecida. É chamado dfs ou dfsr . Significa uma busca recursiva em profundidade nos nós de um grafo, usando backtracking. A tarefa aqui é, a partir de um grafo de entrada, gerar o desenho hierárquico dos nós pesquisados.Para ajudá-lo, é fornecido o procedimento PathR, listado acima.
 
+![Função PathR](screenshots/pathR1081.png)
+
+#### Entrada
+
+&emsp;O arquivo de entrada contém muitos casos de teste. A primeira linha do arquivo de entrada contém um inteiro **N** que representa a quantidade de casos de teste a seguir. Cada um dos **N** casos de teste contém, na primeira linha, duas informações: (1 ≤ **V** ≤ 20) e **E** (1 ≤ **E** ≤ 20), que são respectivamente a quantidade de vértices e arestas do grafo. Siga **E** linhas contendo informações sobre todas as arestas deste grafo.
+
+#### Saída
+
+&emsp;Para cada caso de teste, deve ser impressa uma saída que represente uma busca em profundidade para todos os nós, respeitando a hierarquia de cada um deles. O caractere b significa um espaço em branco. Veja o seguinte exemplo:<br>
+&emsp;**bb**0-2 pathR(G,2)<br>
+&emsp;**bbbb**2-1 pathR(G,1)<br>
+&emsp;**bbbb**2-4 pathR(G,4)<br>
+&emsp;**bbbbbb**4-1<br> <br>
+&emsp;E assim por diante...<br>
+&emsp;Obs.: O programa deve imprimir uma linha em branco após cada caso de teste, mesmo após o último caso de teste.<br>
+
+##### Execute no terminal
+
+Para compilar com o gcc:
+```
+gcc -o depthHierarchy depthHierarchy.c
+```
+
+Executar:
+```
+./depthHierarchy
+```
+
+##### Exemplo de Entrada
+~~~
+2
+12 9
+0 1
+1 5
+5 6
+0 4
+4 2
+2 3
+7 8
+1 7
+10 11
+11 8
+0 1
+1 2
+3 4
+4 3
+5 6
+6 8
+7 9
+9 10
+
+~~~
+
+##### Exemplo de Saída
+~~~
+Caso 1:
+  0-1 pathR(G,1)
+    1-5 pathR(G,5)
+      5-6 pathR(G,6)
+    1-7 pathR(G,7)
+      7-8 pathR(G,8)
+  0-4 pathR(G,4)
+    4-2 pathR(G,2)
+      2-3 pathR(G,3)
+
+  10-11 pathR(G,11)
+
+Caso 2:
+  0-1 pathR(G,1)
+    1-2 pathR(G,2)
+
+  3-4 pathR(G,4)
+    4-3
+
+  5-6 pathR(G,6)
+    6-8 pathR(G,8)
+
+  7-9 pathR(G,9)
+    9-10 pathR(G,10)
+ 
+
+~~~
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
